@@ -1,9 +1,10 @@
 [user] 
 	email = scotty.skidmore@gmail.com
 	user = scottyskid
-[credentials]
+[credential]
 	helper = store
 [core]
 	editor = vim
 [alias]
 	logall = log --oneline --decorate --graph --all
+	st = status -sb
