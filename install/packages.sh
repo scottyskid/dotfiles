@@ -9,6 +9,7 @@ sudo apt -y install curl
 # nvim
 echo "==================================="
 echo "neovim instalation"
+sudo add-apt-repository -y ppa:neovim-ppa/unstable
 sudo apt -y install neovim
 #sudo apt install python3-neovim
 # plug - package manager
