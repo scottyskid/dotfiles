@@ -37,7 +37,7 @@ export LC_ALL="en_US.UTF-8"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Make nvim the default editor
-export EDITOR=`which vim`
+export EDITOR=`which nvim`
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
 export GIT_EDITOR=$EDITOR
