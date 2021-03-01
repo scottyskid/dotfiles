@@ -1,3 +1,5 @@
+#https://github.com/rothgar/awesome-tmux
+
 set-option -g default-shell /bin/zsh
 
 # remap prefix from 'C-b' to 'C-a'
@@ -41,3 +43,14 @@ setw -g mode-keys vi
 ## Options
 set -g bell-action none
 
+## Plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+# darcula specific options
+set -g @plugin 'dracula/tmux' 
+set -g @dracula-show-fahrenheit false
+set -g @dracula-day-month true
+
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
