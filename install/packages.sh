@@ -21,6 +21,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 echo "==================================="
 echo "tmux instalation"
 sudo apt -y install tmux
+#install plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # zsh
 echo "==================================="
@@ -51,3 +53,5 @@ git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
 # make projects directory
 mkdir $HOME/_projects
 
+# set zsh as default
+chsh -s $(which zsh)

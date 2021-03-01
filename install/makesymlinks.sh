@@ -2,7 +2,7 @@ DOTFILES=$HOME/dotfiles
 
 mkdir -p $HOME/.config/nvim/
 mkdir -p $HOME/.config/zsh/
-ln -s $DOTFILES/bin $HOME/bin
+#ln -s $DOTFILES/bin/ $HOME/bin/
 ln -s $DOTFILES/zsh/zshrc.dotfile $HOME/.zshrc
 ln -s $DOTFILES/zsh/zshrc.dotfile $HOME/.config/zsh/.zshrc
 ln -s $DOTFILES/nvim/vimrc.dotfile $HOME/.config/nvim/init.vim
