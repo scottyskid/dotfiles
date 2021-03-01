@@ -1,0 +1,43 @@
+set-option -g default-shell /bin/zsh
+
+# remap prefix from 'C-b' to 'C-a'
+unbind C-b
+set-option -g prefix C-a
+bind-key C-a send-prefix
+
+# Start window numbering at 1
+set -g base-index 1
+
+# sane window split defaults
+bind | split-window -h
+bind - split-window -v
+bind q killp
+
+bind < resize-pane -L 1
+bind > resize-pane -R 1
+bind - resize-pane -D 1
+bind + resize-pane -U 1
+
+# vim style movement
+bind k select-pane -U
+bind j select-pane -D
+bind h select-pane -L
+bind l select-pane -R
+
+# automatically set window titles so you know what's going on
+set-window-option -g automatic-rename on
+set-option -g set-titles on
+
+# synchronize panes - send the same commands to all the open panes
+# use <prefix> Shift-e to enable/disable
+bind E setw synchronize-panes
+
+# enable mouse interaction possible
+setw -g mouse on
+
+# use vim movement for copy mode
+setw -g mode-keys vi
+
+## Options
+set -g bell-action none
+

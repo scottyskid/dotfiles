@@ -1,0 +1,38 @@
+
+
+"""""""""""""""""""
+" Plugin Manager
+"""""""""""""""""""
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
+
+call plug#begin('~/.config/nvim/plugged')
+" all plugins added after here
+
+" Theme
+Plug 'vim-airline/vim-airline' "Status bar
+
+" Syntax Support
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+
+" Tools
+Plug 'tpope/vim-fugitive' "Git tools
+
+" all plugins added before here
+call plug#end()
+
+"""""""""""""""""""
+" Theme Settings
+"""""""""""""""""""
+
+
+
+"""""""""""""""""""
+" General Settings
+"""""""""""""""""""
+set number relativenumber
+
+
+

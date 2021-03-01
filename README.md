@@ -2,9 +2,10 @@
 
 ## good reference repos
 
-https://github.com/causal-agent/effuse
-https://github.com/sanpii/my-dotfiles
+ - https://github.com/causal-agent/effuse
+ - https://github.com/sanpii/my-dotfiles
+ - https://github.com/onaforeignshore/dotfiles
 
 
 ## todo
-add an arcive folder that moves any existing files for that computer into it and updates them with the symlinks (include arcive in gitignore)
+get working with os' other than debian

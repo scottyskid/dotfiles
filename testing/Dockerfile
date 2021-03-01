@@ -16,9 +16,11 @@ RUN apt update
 RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 RUN apt install sudo -y
 RUN usermod -aG sudo docker
-USER docker
-WORKDIR /home/docker
 
 # Copy over dotfiles
-ADD ./dotfiles dotfiles/
+ADD ./dotfiles /home/docker/dotfiles/
+RUN chown -R docker /home/docker/dotfiles/
 
+# switch to new user
+USER docker
+WORKDIR /home/docker
