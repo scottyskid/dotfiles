@@ -9,7 +9,6 @@ LABEL description="custom Docker Image to test dotfiles is working"
 # Disable Prompt During Packages Installation
 ARG DEBIAN_FRONTEND=noninteractive
 
-# Update Ubuntu Software repository
 RUN apt update
 
 # Add a new user
@@ -24,3 +23,5 @@ RUN chown -R docker /home/docker/dotfiles/
 # switch to new user
 USER docker
 WORKDIR /home/docker
+
+ENV DEBIAN_FRONTEND=noninteractive

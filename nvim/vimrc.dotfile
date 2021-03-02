@@ -13,10 +13,12 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Theme
 Plug 'vim-airline/vim-airline' "Status bar
+Plug 'sainnhe/sonokai' "Colour Theme
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Syntax Support
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
-Plug ''
+Plug 'tpope/vim-commentary'
 
 " Tools
 Plug 'tpope/vim-fugitive' "Git tools
@@ -35,5 +37,5 @@ call plug#end()
 """""""""""""""""""
 set number relativenumber
 
-
+colorscheme sonokai
 
