@@ -8,7 +8,7 @@ echo "Creating backup directory at $BACKUP_DIR"
 mkdir -p $BACKUP_DIR
 
 files=''
-for filename in "$HOME/.config/nvim.init" "$HOME/.vimrc" "$HOME/.zshrc" "$HOME/bin"; do
+for filename in "$HOME/.config/nvim.init" "$HOME/.vimrc" "$HOME/.zshrc" "$HOME/bin" "$HOME/.gitconfig"; do
     if [ ! -L $filename ]; then
 	echo "backing up $filename"
         mv -f $filename $BACKUP_DIR

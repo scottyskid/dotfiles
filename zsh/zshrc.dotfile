@@ -29,6 +29,8 @@ plugins=(git pipenv thefuck tmux common-aliases docker tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 
+ZSH_TMUX_AUTOSTART=true
+
 #USER CONFIG 
 # Prefer US English and use UTF-8
 export LANG="en_US.UTF-8"
