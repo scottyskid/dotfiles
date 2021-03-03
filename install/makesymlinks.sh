@@ -15,3 +15,5 @@ ln -s $DOTFILES/nvim/vimrc.dotfile $HOME/.config/nvim/init.vim
 ln -s $DOTFILES/tmux/tmux.conf.dotfile $HOME/.tmux.conf
 ln -s $DOTFILES/tmuxinator/config/ $HOME/.config/tmuxinator/
 ln -s $DOTFILES/tmuxinator/tmuxinator.yml.dotfile $HOME/.tmuxinator.yml
+
+ln -s $DOTFILES/git/gitconfig.dotfile $HOME/.gitconfig

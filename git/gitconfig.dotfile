@@ -1,0 +1,19 @@
+[user] 
+	email = scotty.skidmore@gmail.com
+	name = Scotty Skidmore
+	user = scottyskid
+[credential]
+	helper = store
+[core]
+	editor = vim
+[alias]
+	logall = log --oneline --decorate --graph --all
+	st = status -sb
+
+#These files are to change to my work email if on work repos
+[includeIf "gitdir:chescs/"]
+	path = ~/dotfiles/git/gitconfig-work
+[includeIf "gitdir:_work/"]
+	path = ~/dotfiles/git/gitconfig-work
+[includeIf "gitdir:che_proximity/"]
+	path = ~/dotfiles/git/gitconfig-work
