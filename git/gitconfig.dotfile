@@ -1,11 +1,12 @@
 [user] 
-	email = scotty.skidmore@gmail.com
+	email = scottys@eftsure.com.au
 	name = Scotty Skidmore
-	user = scottyskid
+	user = scottys
 [credential]
 	helper = store
 [core]
 	editor = vim
+	filemode = false
 [alias]
 	logall = log --oneline --decorate --graph --all
 	st = status -sb
@@ -17,3 +18,5 @@
 	path = ~/dotfiles/git/gitconfig-work
 [includeIf "gitdir:che_proximity/"]
 	path = ~/dotfiles/git/gitconfig-work
+[init]
+	defaultBranch = main
