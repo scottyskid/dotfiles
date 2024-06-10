@@ -57,4 +57,4 @@ export NVM_DIR="$HOME/.nvm"
 
 
 export PATH=$PATH:~/oh-my-posh
-eval "$(oh-my-posh init zsh)"
+eval "$(oh-my-posh init zsh --config https://raw.githubusercontent.com/scottyskid/dotfiles/main/oh-my-posh/oh-my-posh-config.omp.json)"
